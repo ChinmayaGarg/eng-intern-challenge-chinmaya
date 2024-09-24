@@ -14,11 +14,6 @@ const BRAILLE_DICT = {
     '/': '..O.OO', '<': '.....O', '>': '.....O', '(': 'O..OO.', ')': '.O.O..', ' ': '......'
 };
 
-// Reverse Braille mapping (for Braille to English)
-const BRAILLE_REVERSE_DICT = Object.fromEntries(
-    Object.entries(BRAILLE_DICT).map(([key, value]) => [value, key])
-);
-
 // Special symbols for capital letters and numbers
 const CAPITAL_PREFIX = '.....O';
 const NUMBER_PREFIX = '.O.OOO';
